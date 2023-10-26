@@ -1,0 +1,79 @@
+[
+  {
+    "name": "ITC",
+    "type": "FIVE_STAR",
+    "pricePerNight": 10000,
+    "rating": 4.5,
+    "city": "Bangalore"
+  },
+  {
+    "name": "Taj",
+    "type": "FIVE_STAR",
+    "pricePerNight": 15000,
+    "rating": 4.8,
+    "city": "Bangalore"
+  },
+  {
+    "name": "Oberoi",
+    "type": "FIVE_STAR",
+    "pricePerNight": 20000,
+    "rating": 4.9,
+    "city": "Bangalore"
+  },
+  {
+    "name": "Radisson",
+    "type": "FOUR_STAR",
+    "pricePerNight": 8000,
+    "rating": 4.2,
+    "city": "Bangalore"
+  },
+  {
+    "name": "Marriot",
+    "type": "FOUR_STAR",
+    "pricePerNight": 7000,
+    "rating": 4.1,
+    "city": "Bangalore"
+  },
+  {
+    "name": "Lemon Tree",
+    "type": "THREE_STAR",
+    "pricePerNight": 5000,
+    "rating": 3.9,
+    "city": "Hyd"
+  },
+  {
+    "name": "Ginger",
+    "type": "THREE_STAR",
+    "pricePerNight": 4000,
+    "rating": 3.8,
+    "city": "Hyd"
+  },
+  {
+    "name": "Treebo",
+    "type": "TWO_STAR",
+    "pricePerNight": 3000,
+    "rating": 3.5,
+    "city": "Hyd"
+  },
+  {
+    "name": "Fab",
+    "type": "TWO_STAR",
+    "pricePerNight": 2000,
+    "rating": 3.2,
+    "city": "Hyd"
+  },
+  {
+    "name": "Oyo",
+    "type": "ONE_STAR",
+    "pricePerNight": 1000,
+    "rating": 2.9,
+    "city": "Hyd"
+  },
+  {
+    "name": "Zostel",
+    "type": "ONE_STAR",
+    "pricePerNight": 500,
+    "rating": 2.5,
+    "city": "Bangalore"
+  }
+]
