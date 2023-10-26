@@ -1,0 +1,26 @@
+  {
+  "questions": [
+    {
+      "qid": 1,
+      "question": "What is the capital of the United States?",
+      "options": [
+        "New York",
+        "Washington D.C.",
+        "Los Angeles",
+        "Chicago"
+      ],
+      "answer": 2
+    },
+    {
+      "qid": 2,
+      "question": "What is the capital of the United Kingdom?",
+      "options": [
+        "London",
+        "Manchester",
+        "Liverpool",
+        "Birmingham"
+      ],
+      "answer": 1
+    }
+  ]
+}

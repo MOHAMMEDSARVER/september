@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "qid": 1,
+      "question": "Who is the best cricketer in the world?",
+      "options": [
+        "Sachin Tendulkar",
+        "Virat Kohli",
+        "Adam Gilchirst",
+        "Jacques Kallis"
+      ],
+      "answer": 2
+    },
+    {
+      "qid": 2,
+      "question": "Who won 2019 cricket world cup?",
+      "options": [
+        "India",
+        "England",
+        "Australia",
+        "West Indies"
+      ],
+      "answer": 2
+    }
+  ]
+}

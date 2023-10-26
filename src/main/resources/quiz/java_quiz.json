@@ -1,0 +1,26 @@
+{
+  "questions": [
+    {
+      "qid": 1,
+      "question": "Which of the following is not valid primitive data type in java?",
+      "options": [
+        "int",
+        "float",
+        "double",
+        "arrays"
+      ],
+      "answer": 4
+    },
+    {
+      "qid": 2,
+      "question": "Which of the following is not a valid keyword in java?",
+      "options": [
+        "int",
+        "if",
+        "elsif",
+        "else"
+      ],
+      "answer": 3
+    }
+  ]
+}
