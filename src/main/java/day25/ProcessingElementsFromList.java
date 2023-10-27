@@ -52,8 +52,9 @@ public class ProcessingElementsFromList {
 
         ListIterator<String> listIterator = list.listIterator();
         while (listIterator.hasNext()) {
-            System.out.println(listIterator.next());
-            if (listIterator.next().equals("java")) {
+            String ele= listIterator.next();
+            System.out.println(ele);
+            if (ele.equals("java")) {
                 listIterator.remove();
             }
         }
@@ -68,6 +69,28 @@ public class ProcessingElementsFromList {
             System.out.println(ele);
         }*/
 
+
+    }
+
+    interface  I1{
+        I2 getI2();
+    }
+    interface  I2{
+        boolean isEven(int num);
+    }
+    class  C1 implements I1{
+
+        @Override
+        public I2 getI2() {
+            return new X();
+        }
+
+        class X implements  I2{
+            @Override
+            public boolean isEven(int num) {
+                return num % 2 == 0;
+            }
+        }
 
     }
 }
