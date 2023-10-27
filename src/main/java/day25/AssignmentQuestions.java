@@ -70,9 +70,9 @@ public class AssignmentQuestions {
             if (isprime(s))
                 primelist.add(s);
         });
-        System.out.println("prime numbers list :"+primelist);
+        System.out.println("prime numbers list :" + primelist);
         System.out.println("______________________________________________________________");
-        ;
+
     }
 
     private static boolean isprime(Integer s) {

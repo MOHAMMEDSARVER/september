@@ -16,7 +16,14 @@ public class ArrayExample {
 
     public static void main(String[] args) {
         List<Hotel> hotels = getHotelDetails();
+        //System.out.println(hotels);
         System.out.println(getHotelsRatingGt(2));
+        System.out.println("City names: " + getCityNames());
+        System.out.println("city hotels");
+        System.out.println(getHotelsByCity("Bangalore"));
+        System.out.println("hotel Names :" + getHotelNames(hotels));
+
+
     }
 
     private static List<String> getHotelsRatingGt(double rating) {
@@ -61,8 +68,8 @@ public class ArrayExample {
     private static List<String> getHotelNames(List<Hotel> hotels) {
         // TODO : Return the list of hotel names
         List<String> hotelnames = new ArrayList<>();
-        List<Hotel> hotels1 = getHotelDetails();
-        hotels1.forEach(s -> {
+        //List<Hotel> hotels1 = getHotelDetails();*/
+        hotels.forEach(s -> {
             hotelnames.add(s.name());
         });
         return hotelnames;
