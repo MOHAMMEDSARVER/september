@@ -7,6 +7,12 @@
     <groupId>org.example</groupId>
     <artifactId>class</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <modules>
+        <module>core-java</module>
+        <module>ipl-player-data</module>
+        <module>ipl-player</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>20</maven.compiler.source>
