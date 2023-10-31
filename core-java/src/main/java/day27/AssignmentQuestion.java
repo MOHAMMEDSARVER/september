@@ -2,6 +2,8 @@ package day27;
 
 import lombok.*;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -40,10 +42,10 @@ public class AssignmentQuestion {
         List<PaymentDetails> paymentDetails = new AssignmentQuestion().getPaymentDetails();
 
         // Get all Failed transactions
-        List<PaymentDetails> faildPayments = paymentDetails.stream()
+        List<PaymentDetails> failedPayments = paymentDetails.stream()
                 .filter(e -> e.getPaymentStatus().equals(PaymentStatus.FAILED))
                 .toList();
-        faildPayments.forEach(System.out::println);
+        failedPayments.forEach(System.out::println);
         System.out.println("__________________________________________________________________");
 
         // Get all transactions which are made by UPI
@@ -64,14 +66,14 @@ public class AssignmentQuestion {
 
 
         // Get all account numbers which are involved in transactions
-        Set<String> accNumber = paymentDetails.stream()
-                .map(e -> e.getFromAccNumber())
-                .collect(Collectors.toSet());
-        accNumber.addAll(paymentDetails.stream()
-                .map(e -> e.getToAccNumber())
-                .collect(Collectors.toSet()));
-        System.out.println("_____________account numebr involved in transactions_________");
-        accNumber.forEach(System.out::println);
+        Set<String> accNumbers = new HashSet<>();
+        paymentDetails.stream()
+                .forEach(e -> {
+                    accNumbers.add(e.getToAccNumber());
+                    accNumbers.add(e.getFromAccNumber());
+                });
+        System.out.println("_____________account numbers involved in transactions_________");
+        accNumbers.forEach(System.out::println);
     }
 
     private List<PaymentDetails> getPaymentDetails() {

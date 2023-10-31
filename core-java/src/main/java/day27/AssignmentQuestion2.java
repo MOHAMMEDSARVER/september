@@ -22,8 +22,11 @@ public class AssignmentQuestion2 {
         uniquelists.addAll(EC);
         System.out.println("Unique List:  " + uniquelists);
 
+        List<String> list;
+        list = uniquelists.stream().filter(ele -> CS.contains(ele) && IS.contains(ele) && EC.contains(ele)).toList();
+
         // Get names who are working in all the departments
-        List<String> list = CS.stream()
+        list = CS.stream()
                 .filter(e -> IS.contains(e))
                 .filter(e -> CS.contains(e))
                 .toList();
@@ -31,15 +34,15 @@ public class AssignmentQuestion2 {
 
         // Get names who are working for only one department
 
-       Set<String> onedept=new HashSet<>();
-       uniquelists.forEach(e->{
-           if(CS.contains(e) && !IS.contains(e) && !EC.contains(e))
-               onedept.add(e);
-           else if (!CS.contains(e) && IS.contains(e) && !EC.contains(e))
-               onedept.add(e);
-           else if (!CS.contains(e) && !IS.contains(e) && EC.contains(e))
-               onedept.add(e);
-       });
+        Set<String> onedept = new HashSet<>();
+        uniquelists.forEach(e -> {
+            if (CS.contains(e) && !IS.contains(e) && !EC.contains(e))
+                onedept.add(e);
+            else if (!CS.contains(e) && IS.contains(e) && !EC.contains(e))
+                onedept.add(e);
+            else if (!CS.contains(e) && !IS.contains(e) && EC.contains(e))
+                onedept.add(e);
+        });
         System.out.println("One dept names:" + onedept);
 
     }
