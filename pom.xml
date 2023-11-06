@@ -13,6 +13,7 @@
         <module>ipl-player-data</module>
         <module>learning_jdbc</module>
         <module>ipl-stats-jdbc</module>
+        <module>learning-junit</module>
         <!--<module>ipl-player</module>-->
     </modules>
 
